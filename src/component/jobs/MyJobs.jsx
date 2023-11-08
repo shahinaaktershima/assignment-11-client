@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import MyJob from "./MyJob";
 import Swal from "sweetalert2";
+import { AuthContext } from "../usersetup/AuthProvider";
 
 
 const MyJobs = () => {
+  const {user}=useContext(AuthContext)
     const [myJobs,setMyjobs]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/createdJobs')
+        fetch(`http://localhost:5000/createdJobs?email=${user?.email}`)
         .then(res=>res.json())
         .then(data=>setMyjobs(data))
     },[])

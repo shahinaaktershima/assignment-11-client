@@ -18,6 +18,7 @@ import AddAjob from './component/jobs/AddAjob';
 import MyJobs from './component/jobs/MyJobs';
 import Update from './component/jobs/Update';
 import AllJobs from './component/jobs/AllJobs';
+import Private from './component/usersetup/Private';
 
 
 const router = createBrowserRouter([
@@ -38,21 +39,21 @@ const router = createBrowserRouter([
     },
     {
       path:'/details/:id',
-      element:<Details></Details>,
+      element:<Private><Details></Details></Private>,
       loader:({params})=>fetch(`http://localhost:5000/jobs/${params.id}`)
     }
     ,
     {
       path:'/appliedjobs',
-      element:<AppliedJobs></AppliedJobs>
+      element:<Private><AppliedJobs></AppliedJobs></Private>
     },
     {
       path:'/addajob',
-      element:<AddAjob></AddAjob>
+      element:<Private><AddAjob></AddAjob></Private>
     },
   {
    path:'/myjobs',
-   element:<MyJobs></MyJobs>
+   element:<Private><MyJobs></MyJobs></Private>
   },
   {
     path:'/update/:id',
