@@ -19,6 +19,7 @@ import MyJobs from './component/jobs/MyJobs';
 import Update from './component/jobs/Update';
 import AllJobs from './component/jobs/AllJobs';
 import Private from './component/usersetup/Private';
+import Blogs from './component/Blogs';
 
 
 const router = createBrowserRouter([
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path:'/allJobs',
     element:<AllJobs></AllJobs>
+  },
+  {
+    path:'/blogs',
+    element:<Blogs></Blogs>
   }
   ]
   },
