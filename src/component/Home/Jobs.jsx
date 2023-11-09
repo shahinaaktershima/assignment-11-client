@@ -17,7 +17,7 @@ const Jobs = () => {
             setJobs(filteredJobs)
         }
     return (
-        <div className="my-10">
+        <div className="my-6">
             
             <Tabs className='space-y-3'>
         <TabList className='grid grid-cols-5   gap-5'>
