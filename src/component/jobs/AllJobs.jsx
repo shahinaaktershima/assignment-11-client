@@ -10,14 +10,13 @@ const AllJobs = () => {
         .then(data=>setApplied(data))
     },[])
     return (
-        <div className="overflow-x-auto my-10">
+        <div className="md:overflow-x-auto w-full mx-auto  my-10">
         <table className="table">
          {/* head */}
          <thead >
-           <tr className=" text-2xl font-bold">
+           <tr className=" md:text-2xl font-bold">
              <th>Name</th>
-             <th>title</th>
-             
+             <th>title</th>       
              <th>Salary</th>
              <th>Posting date</th>
              <th>Deadline</th>

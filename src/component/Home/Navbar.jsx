@@ -33,7 +33,7 @@ const Navbar = () => {
        }
       </ul>
     </div>
-   <div className="flex items-center"> <div className="flex-1 "><img className="rounded-full h-[80px] w-[80px]" src="https://i.postimg.cc/ncKGvhpy/front-view-young-beautiful-lady-white-shirt-black-jacket-using-her-laptop-front-table-smiling-showin.jpg" alt="" /></div>
+   <div className="flex items-center"> <div className="flex-1 "><img className="rounded-full md:h-[80px] md:w-[80px] w-[30px] h-[30px]" src="https://i.postimg.cc/ncKGvhpy/front-view-young-beautiful-lady-white-shirt-black-jacket-using-her-laptop-front-table-smiling-showin.jpg" alt="" /></div>
     <a className="btn btn-ghost normal-case text-xl">Job Space</a></div>
   </div>
   <div className="navbar-center hidden lg:flex">

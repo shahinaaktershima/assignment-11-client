@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return (
-        <div>
+        <div className="w-full">
             <footer className="bg-base-200">
  <div className="footer p-10  text-base-content"> <aside className="flex items-center">
    <img className="rounded-full h-[80px] w-[80px]" src="https://i.postimg.cc/ncKGvhpy/front-view-young-beautiful-lady-white-shirt-black-jacket-using-her-laptop-front-table-smiling-showin.jpg" alt="" />
