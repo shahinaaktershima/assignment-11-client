@@ -20,7 +20,7 @@ const AddAjob = () => {
         console.log(name,title,category,salary,description,date,deadline,applicants);
         form.reset('')
         const jobs={name,title,category,salary,description,date,deadline,applicants,image}
-        fetch('http://localhost:5000/createdJobs',{
+        fetch('https://job-project-server.vercel.app/createdJobs',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

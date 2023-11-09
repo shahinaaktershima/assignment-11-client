@@ -18,7 +18,7 @@ const Details = () => {
         name,email,resume,postingDate,image,title,type,deadline,salaryRange
        }
 
-       fetch('http://localhost:5000/applied',{
+       fetch('https://job-project-server.vercel.app/applied',{
         method:'POST',
         headers:{
             'content-type':'application/json'

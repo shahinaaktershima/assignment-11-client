@@ -5,7 +5,7 @@ import All from "./All";
 const AllJobs = () => {
     const [applied,setApplied]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/applied')
+        fetch('https://job-project-server.vercel.app/applied')
         .then(res=>res.json())
         .then(data=>setApplied(data))
     },[])

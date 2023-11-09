@@ -8,7 +8,7 @@ const MyJobs = () => {
   const {user}=useContext(AuthContext)
     const [myJobs,setMyjobs]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/createdJobs')
+        fetch('https://job-project-server.vercel.app/createdJobs')
         .then(res=>res.json())
         .then(data=>setMyjobs(data))
     },[])

@@ -24,7 +24,7 @@ const Update = () => {
         form.reset('')
         const jobs={name,title,category,salary,description,date,deadline,applicants,image}
 
-        fetch(`http://localhost:5000/createdJobs/${_id}`, {
+        fetch(`https://job-project-server.vercel.app/createdJobs/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
